@@ -20,17 +20,16 @@ nav{
 }
 /* Création du logo */
 label.logo {
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    font-size: 2em;
+    font-size: 1.5em;
     font-family:"Lavishly Yours", cursive;
-    margin: 30px 40px 40px 60px;
+    margin: 45px 40px 40px 60px;
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 100%; 
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 2.7em;
+    height: 2.7em;
     background-image: linear-gradient(to bottom, rgb(223, 150, 76) 10%, rgb(121, 81, 41
     ));
     aspect-ratio: 1 / 1;  
@@ -47,7 +46,7 @@ ul {
 /* Styles pour les items de la liste (li) */
 ul li {
     display: inline-block;
-    margin: 0 3%;
+    margin: 0 30px;
     font-size: 2em;
 }
 /* Styles pour les liens dans la liste de navigation */
@@ -81,21 +80,20 @@ ul li {
     margin-top: 0;
 
 }
-/* Media query pour les écrans de moins de 916px (version mobile) */
- @media screen and (max-width: 916px){
+/* Media query pour les écrans de moins de 1024px (version mobile) */
+ @media screen and (max-width: 1024px){
      /* Styles ajustés pour le logo en version mobile */
     label.logo {
-        text-shadow: 1px 1px 2px black;
-        font-size: 1.2em;
+        font-size: 1em;
         font-family:"Lavishly Yours", cursive;
-        margin: 43px 50px 40px 50px;
+        margin: 30px 30px 40px 30px;
         display: flex;
         justify-content: center; 
         align-items: center; 
         height: 100%; 
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-image: linear-gradient(to bottom, rgb(223, 150, 76) 10%, rgb(121, 81, 41
         ));
         aspect-ratio: 1 / 1;  
@@ -104,6 +102,12 @@ ul li {
     .image-menu-burger {
         display: block;
         z-index: 10; /* L'icône burger reste visible au-dessus */
+        top: 40px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        margin-right: 1em;
+        margin-top: 0px;
     }
     /* Affiche l'icône croix pour fermer le menu en version mobile */
     .image-croix-menu  {
@@ -123,7 +127,7 @@ ul li {
         align-items: center;
         font-size: 1.2em;
         border-radius: 0px 0px 0px 0px ;
-        margin-top: -115%;
+        margin-top: -130%;
         transition: all 0.5s ease-out;;
         border-radius: 0px 10px 10px;
         box-shadow: 0px 1px rgb(223, 150, 76);
@@ -140,7 +144,114 @@ ul li {
         margin: 3% 0px;
         font-size: 1.5em;
     }
+    nav {
+        height: 100px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .page-en-cour h1{    
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        margin: 0;
+        width: 100vw;
+        text-align: center;
+        font-size: 10vw;
+    }
+    section.textePresentation {
+        margin-top: 50px ;
+        margin-left: 0 ;
+        text-align: center;
+    }
+    h2.Hello {
+        font-size: 6vw 
+    }
+    h3.Bienvenue {
+        font-size: 5vw;
+        
+    }
+    h2.NomPrénom {
+        font-size: 10vw;
+       
+    }
+    h3.Métier {
+        font-size: 5vw;
+        background: linear-gradient(to bottom, rgb(218, 56, 56), rgb(116, 30, 30
+        ));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    section.image-fond {
+        margin-top: 0px ;
+    }
+    .image-logo-fond {
+        margin-top: 0px;
+    }
  }
 
+main {
+    min-height: 100vh;
+    display: flex;
+}
+section.page-en-cour{
+    width: 30%;
+}
+section.textePresentation {
+    width: 100%;
+}
 
+section.image-fond,img {
+   width: 100%;
+   margin-top: 80px;  
+}
 
+h1 {
+    margin-left: 1.5rem;
+    margin-top: 10rem;
+    font-family: "Jomolhari", serif;
+    font-weight: 100;
+    font-size: 7rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background: linear-gradient(to bottom, rgb(223, 150, 76), rgb(121, 81, 41
+    ));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+}
+
+.textePresentation { 
+    margin-top: 15vh;
+    margin-left: 10vh;
+    font-family:"Kaisei Tokumin", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: aliceblue;
+    width: auto;
+    height: auto;
+    text-shadow: 1px 3px 2px black;
+}
+.Hello {
+    font-size: 4em;
+}
+.Bienvenue {
+    font-size: 2.5em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.NomPrénom {
+    font-size: 6.5em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.Métier {
+    font-size: 3em;
+    background: linear-gradient(to bottom, rgb(218, 56, 56), rgb(116, 30, 30
+    ));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
