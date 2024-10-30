@@ -9,36 +9,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Kaisei+Tokumin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/chargement.css" >
     <title>Portfolio Nicolas Dallari</title>
 </head>
 <body>
-    <nav>
-        <label class="logo">DN</label>
-            <ul class="nav-links">
-                <img src="image/icons8-croix-64.png" class="image-croix-menu" alt="image fermer le menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        <img src="image/icons8-hamburger-50.png" class="image-menu-burger" alt="image de menu">
-     </nav>
-     <main>
-        <section class="page-en-cour">
-            <h1>Accueil</h1>
-        </section>
-        <section class="textePresentation">
-            <h2 class="Hello">Hello World !</h2>
-            <h3 class="Bienvenue">Bienvenue sur le portfolio de</h3>
-            <h2 class="NomPrénom">Dallari Nicolas</h2>
-            <h3 class="Métier">Developpeur Web et Mobile</h3>
-        </section>
-        <section class="image-fond">
-            <img src="image/pixelcut-export (2).png" class="image-logo-fond" alt="image de fond ">
-        </section>
-     </main>
+    <div class="chargement">
+        <span class="lettre">C</span>
+        <span class="lettre">H</span>
+        <span class="lettre">A</span>
+        <span class="lettre">R</span>
+        <span class="lettre">G</span>
+        <span class="lettre">E</span>
+        <span class="lettre">M</span>
+        <span class="lettre">E</span>
+        <span class="lettre">N</span>
+        <span class="lettre">T</span>
+    </div>
+    <div class="container">
+        <nav>
+            <label class="logo">DN</label>
+                <ul class="nav-links">
+                    <img src="/docs/images/icons8-croix-64.png" class="image-croix-menu" alt="image fermer le menu">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            <img src="docs/images/icons8-hamburger-50.png" class="image-menu-burger" alt="image de menu">
+        </nav>
+        <main>
+            <section class="page-en-cour">
+                <h1>Accueil</h1>
+            </section>
+            <section class="textePresentation">
+                <h2 class="Hello">Hello World !</h2>
+                <h3 class="Bienvenue">Bienvenue sur le portfolio de</h3>
+                <h2 class="NomPrénom">Dallari Nicolas</h2>
+                <h3 class="Métier">Développeur Web et Mobile</h3>
+            </section>
+            <section class="image-fond">
+                <img src="docs/images/pixelcut-export.webp" width="100%" height="100%" class="image-logo-fond" alt="image de fond ">
+            </section>
+        </main>
+    </div>
 </body>
-<script src="App.js"></script>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/app.js"></script>
