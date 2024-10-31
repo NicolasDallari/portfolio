@@ -1,0 +1,24 @@
+
+.apropos {
+    display: flex;
+}
+.texteParcour {
+    padding: 150px;
+    width:70%
+}
+.imagePortrait {
+    width:30%
+}
+.imagePhotoMoi {
+    width: 30%;
+    height: 50%;
+    object-fit:cover;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    
+}
+h2, p {
+    color: aliceblue;
+    font-size: 30px;
+}
