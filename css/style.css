@@ -1,0 +1,270 @@
+@import url("chargement.css");
+/* Variables CSS pour les couleurs et ombres */
+
+:root {
+    --primary-gradient: linear-gradient(to right, rgb(0, 0, 0) 10%, rgb(102, 102, 102));
+    --logo-gradient: linear-gradient(to bottom, rgb(223, 150, 76) 10%, rgb(121, 81, 41));
+    --text-shadow: 1px 3px 2px black;
+    --text-chargement:  rgb(223, 150, 76);
+}
+/* Remise a zero des marges de toute la page */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Couleur de fond en dégrader de la page */
+body {
+    background-image: var(--primary-gradient);
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.container {
+    display: none;
+    width: 100%;
+    max-width: 2000px; 
+    height: 100vh;
+}
+
+/* Styles de la nav */
+nav{
+    height: 130px;
+    display: flex;
+}
+/* Création du logo */
+label.logo {
+    font-size: 1.4em;
+    font-family:"Lavishly Yours", cursive;
+    margin: 45px 0px 40px 60px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    border-radius: 50%;
+    width: 2.7em;
+    height: 2.7em;
+    background-image: var(--logo-gradient);
+    aspect-ratio: 1 / 1;  
+}
+/* Navigation et liens */
+ul { 
+    flex-grow: 1;
+    margin-top: 55px;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    z-index: 9; 
+}
+/* Styles pour les items de la liste (li) */
+ul li {
+    margin: 0 30px;
+    font-size: 1.8em;
+}
+/* Styles pour les liens dans la liste de navigation */
+ ul li a {
+    color: white;
+    font-family:"Jomolhari";
+    text-shadow: var(--text-shadow);
+}
+/* Styles pour l'icône du menu burger (hamburger) */
+.image-menu-burger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    height: 35px;
+    z-index: 10; 
+}
+/* Styles pour l'icône croix (pour fermer le menu) */
+.image-croix-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    width: 50px;
+    height: 50px;
+    z-index: 10; 
+}
+/* Classe supplémentaire pour les styles mobiles (pour un menu mobile) */
+.menu-mobile{
+    margin-top: 0;
+}
+/* Contenu principal */
+main {
+    display: flex; 
+}
+.page-en-cour  {
+    width: 15%;   
+}
+/* Présentation du texte */
+.textePresentation { 
+    padding-left: 0%;
+    margin-top: 140px;
+    font-family:"Kaisei Tokumin", serif;
+    color: aliceblue;
+    width: 45%;
+    height: auto;
+}
+.textePresentation *:not(.Métier) { 
+    text-shadow: var(--text-shadow);
+}
+/* Styles des titres */
+h1, .Hello, .Bienvenue, .NomPrénom, .Métier {
+    font-family: "Jomolhari", serif;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin-top: 13rem;
+    font-size: 5.5vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background: var(--logo-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+}
+
+.Hello { font-size: 4vw; margin-bottom: 3%; }
+.Bienvenue, .Métier { font-size: 2.2vw; margin-bottom: 2%; }
+.NomPrénom { font-size: 5.5vw; margin-bottom: 2%; }
+
+.Métier {
+    background: linear-gradient(to bottom, rgb(218, 56, 56), rgb(116, 30, 30));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Image de fond */
+section.image-fond { width: 40%; }
+.image-logo-fond {
+    margin-top: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+ 
+/* Media query pour les écrans de moins de 1024px (version mobile) */
+@media screen and (max-width: 1024px) {
+    .chargement .lettre {
+        font-size: 25px;
+    }
+    label.logo {
+        font-size: 1em;
+        margin: 30px;
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(to bottom, rgb(223, 150, 76) 10%, rgb(121, 81, 41));
+        aspect-ratio: 1 / 1;
+    }
+
+    /* Affiche les icônes du menu burger et de fermeture */
+    .image-menu-burger,
+    .image-croix-menu {
+        display: block;
+        width: 30px;
+        height: 30px;
+        top: 40px;
+        right: 40px;
+        z-index: 10;
+    }
+
+    .image-croix-menu {
+        z-index: 11;
+    }
+
+    /* Styles pour le menu mobile */
+    ul {
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        margin-top: -130%;
+        border-radius: 0 10px 10px;
+        box-shadow: 0px 1px rgb(223, 150, 76);
+        transition: all 0.5s ease-out;
+        z-index: 9;
+    }
+
+    ul.open {
+        margin-top: 0;
+        z-index: 12;
+    }
+
+    ul li {
+        margin: 3% 0;
+        font-size: 1.5em;
+    }
+
+    /* Ajustements du layout pour le mobile */
+    nav {
+        height: 100px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .page-en-cour {
+        width: 100%;
+    }
+
+    h1 {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+        margin: 0;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    section.textePresentation {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    /* Redimensionnement du texte en version mobile */
+    h2.Hello { font-size: 6vw; }
+    h3.Bienvenue { font-size: 5vw; }
+    h2.NomPrénom { font-size: 10vw; }
+    
+    h3.Métier {
+        font-size: 5vw;
+        background: linear-gradient(to bottom, rgb(218, 56, 56), rgb(116, 30, 30));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    section.image-fond,
+    .image-logo-fond {
+        width: 100% !important;
+        margin-top: 0;
+    }
+}
+
+/* Media query pour les écrans de plus de 2000px */
+@media screen and (min-width: 2000px) {
+    .container {
+        width: 2300px;
+    }
+
+    h1 { font-size: 7em; }
+    h2.Hello { font-size: 3.5em; }
+    h3.Bienvenue,
+    h3.Métier { font-size: 2.3em; }
+    h2.NomPrénom { font-size: 7.5em; }
+}
