@@ -1,24 +1,92 @@
-
+.container-propos {
+    width: 100%;
+    max-width: 2300px; 
+    height: 100vh;
+}
 .apropos {
     display: flex;
 }
 .texteParcour {
-    padding: 150px;
     width:70%
 }
-.imagePortrait {
-    width:30%
+section.image-portrait { width: 30%; }
+.image-photo-moi {
+    object-fit: contain;
+    position: fixed;     
+    bottom: 0px;          
+    right: 0px;           
+    width: 27vw;          
+    height: auto;         
 }
-.imagePhotoMoi {
-    width: 30%;
-    height: 50%;
-    object-fit:cover;
-    position: fixed;
-    bottom: 0px;
-    right: 0px; 
-    
+
+.texteParcour {
+    padding-top: 90px;
+    font-family:"Jomolhari";
+    text-shadow: var(--text-shadow)
 }
-h2, p {
+h2 {
+    color: rgb(223, 150, 76);
+    font-size: 37px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    opacity: 40%;
+}
+p {
     color: aliceblue;
-    font-size: 30px;
+    font-size: 22px;
+}
+/* Media query pour les écrans de moins de 1024px (version mobile) */
+@media screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+   .page-en-cour {
+        order: -2;
+   }
+    .image-portrait {
+        order: -1; 
+    }
+
+    .texteParcour {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+       
+    }
+
+    section.image-portrait { width: 100%;}
+    .image-photo-moi {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        position: static;
+        width: 50vw;         
+        height: auto;          
+        border-radius: 50%;    
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);      
+    }
+    h2 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    p {
+        font-size: 17px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        
+    }
+}
+/* Media query pour les écrans de plus de 2000px */
+@media screen and (min-width: 2000px) {
+
+    .image-photo-moi {   
+        width: 20vw;                
+    }
+    p {
+        font-size: 25px;
+    }
 }

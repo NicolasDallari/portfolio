@@ -31,4 +31,4 @@ window.addEventListener('load', () => {
 setTimeout(() => {
   chargement.style.display = 'none'; // Cache l'écran de chargement
   document.querySelector('.container').style.display = 'block'; // Affiche le contenu principal de la page
-}, 3000);
+}, 0);
