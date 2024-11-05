@@ -22,26 +22,26 @@ function handleScreenChange(e) {
     if (e.matches) {
         TL1
         .from(accueil, 3, {y: -30, opacity: 0},)
-        .from(quiH2, 2, {x: -40, opacity: 0},'-=2.5')
-        .from(imageProfil, 2, {x: 50, opacity: 0},'-=2.3')
-        .from(quiP, 2, {x: 40, opacity: 0},'-=2')
-        .from(pourquoiH2, 2, {x:-40, opacity: 0},'-=2')
-        .from(pourquoiP, 2, {x: 40, opacity: 0},'-=2')
-        .from(parcourH2, 2, {x:-40, opacity: 0},'-=2')
-        .from(parcourP, 2, {x: 40, opacity: 0},'-=2')
+        .from(imageProfil, 2, { opacity: 0},'-=2.5')
+        .from(quiH2, 2, { opacity: 0},'-=2.2')
+        .from(quiP, 2, { opacity: 0},'-=2')
+        .from(pourquoiH2, 2, { opacity: 0},'-=1.8')
+        .from(pourquoiP, 2, { opacity: 0},'-=1.6')
+        .from(parcourH2, 2, { opacity: 0},'-=1.4')
+        .from(parcourP, 2, { opacity: 0},'-=1.2')
         TL1.play();
        
     } else {
         TL1
         .from(logo, 1.7, {y: -150, opacity: 0}, )
-        .from(accueil, 1.7, {y: 150, opacity: 0},'-=1.7')
-        .from(quiH2, 1.5, {y: -40, opacity: 0},'-=1.4')
-        .from(quiP, 1.5, {y: -40, opacity: 0},'-=1.2')
-        .from(imageProfil, 3, {x: 80, opacity: 0},'-=1.5')
-        .from(pourquoiH2, 1.5, {y:-40, opacity: 0},'-=2.7')
-        .from(pourquoiP, 1.5, {y: -40, opacity: 0},'-=2.4')
-        .from(parcourH2, 1.5, {y:-40, opacity: 0},'-=2.2')
-        .from(parcourP, 1.5, {y: -40, opacity: 0},'-=2')
+        .from(accueil, 1.7, { y: 150, opacity: 0},'-=1.7')
+        .from(quiH2, 1.5, { opacity: 0},'-=1.4')
+        .from(quiP, 1.5, { opacity: 0},'-=1.2')
+        .from(imageProfil, 3, {opacity: 0},'-=1.5')
+        .from(pourquoiH2, 1.5, { opacity: 0},'-=2.7')
+        .from(pourquoiP, 1.5, { opacity: 0},'-=2.4')
+        .from(parcourH2, 1.5, {opacity: 0},'-=2.2')
+        .from(parcourP, 1.5, { opacity: 0},'-=2')
         .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20, '-=1.8')
         TL1.play();
         
