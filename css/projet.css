@@ -29,44 +29,64 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr; 
     gap: 5rem;
-    margin-top: 70px;
+    margin-top: 100px;
     justify-content: center;
     
 }
 .carte {
-    background-color: rgb(255, 255, 255);
+    padding: 15px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    height: 500px; 
+    height: auto;
+    background-color: rgb(255, 255, 255, 0.9); 
+    box-shadow: 1px 1px 10px #ffffff;
+   
 }
-.carte:hover {
-    filter:drop-shadow( 0 0 0.70rem rgb(223, 150, 76));
-}
+
 .image {
     width: 100%;
-    height: 35%;
+    height: 35%;  
 }
 .texte {
     width: 100%;
-    height: 55%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    border-radius: 5%;
+ 
 }
+
 .lien {
     width: 100%;
     height: 10%;
+    margin-top: 10%;
+    text-align: center;
 }
-img {
+.imageSite{
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 5%; 
+    box-shadow: 1px 1px 20px #000000;
     
 }
-.interieurCarte {
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: 1px solid rgba(43, 105, 251, 0.12);
-    box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 1rem 1rem;
-    position: relative;
+h3 { 
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: rgb(223, 150, 76);
+    
+}
+
+.imageLienGithub, .imageliensite {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 30%; 
+    margin-top: 20px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 10px #000000;
 }
 @media screen and (max-width: 1422px ){ 
     .containerProjet {
