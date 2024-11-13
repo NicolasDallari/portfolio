@@ -19,7 +19,7 @@ const mediaQuery = window.matchMedia("(max-width: 1024px)");
 function handleScreenChange(e) {
     if (e.matches) {
         TL1
-        .from(accueil, 6, {y: -150, opacity: 0}, )
+        .from(accueil, 3, {y: -30, opacity: 0}, )
         .from(hello, 2.5, {x: -70,y: -70, opacity: 0},'-=2.5')
         .from(bienvenue, 2.4, {y: 70,x: 70, opacity: 0},'-=2.4')
         .from(nomPrénom, 2.3, {x: 70,y: -70, opacity: 0},'-=2.3')
@@ -29,14 +29,14 @@ function handleScreenChange(e) {
        
     } else {
         TL1
-        .from(logo, 6, {y: -150, opacity: 0}, )
-        .from(accueil, 3, {y: 150, opacity: 0},'-=3')
-        .from(hello, 2.5, {x: -70, opacity: 0},'-=2.5')
-        .from(bienvenue, 2.4, {x: 70, opacity: 0}, '-=2.4')
-        .from(nomPrénom, 2.3, {x: -70, opacity: 0}, '-=2.3')
-        .from(métier, 2.2, {x: 70, opacity: 0}, '-=2.2')
-        .from(imageFond, 2.1, {y: 80, opacity: 0}, '-=2.1')
-        .staggerFrom(allItems, 1.2, {y: -100, opacity: 0}, 0.25, '-=2.2')
+        .from(logo, 1.7, {y: -150, opacity: 0}, )
+        .from(accueil, 1.7, {y: 150, opacity: 0},'-=1.7')
+        .from(hello, 1.5, {x: -70, opacity: 0},'-=1.1')
+        .from(bienvenue, 1.5, {x: 70, opacity: 0}, '-=1')
+        .from(nomPrénom, 1.5, {x: -70, opacity: 0}, '-=0.9')
+        .from(métier, 1.5, {x: 70, opacity: 0}, '-=0.8')
+        .from(imageFond, 3,{y: 80, opacity: 0}, '-=3')
+        .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20,'-=1.8')
         TL1.play();
     }
 }
