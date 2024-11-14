@@ -2,12 +2,12 @@
 
 const logo = document.querySelector('.logo');
 const accueil = document.querySelector('.page-en-cour');
-const quiH2 = document.querySelector('.quiH2');
-const quiP = document.querySelector('.quiP');
-const pourquoiH2 = document.querySelector('.pourquoiH2');
-const pourquoiP = document.querySelector('.pourquoiP');
-const parcourH2 = document.querySelector('.parcourH2');
-const parcourP = document.querySelector('.parcourP');
+const quiH2 = document.querySelector('.qui-h2');
+const quiP = document.querySelector('.qui-p');
+const pourquoiH2 = document.querySelector('.pourquoi-h2');
+const pourquoiP = document.querySelector('.pourquoi-p');
+const parcourH2 = document.querySelector('.parcour-h2');
+const parcourP = document.querySelector('.parcour-p');
 const imageProfil = document.querySelector('.image-photo-moi');
 const allItems = document.querySelectorAll('li');
 

@@ -3,7 +3,7 @@
     max-width: 2300px; 
     height: 100vh;
 }
-.texteParcour {
+.texte-parcour {
     width:70%
 }
 section.image-portrait { width: 30%; }
@@ -16,7 +16,7 @@ section.image-portrait { width: 30%; }
     height: auto;         
 }
 
-.texteParcour {
+.texte-parcour {
     padding-top: 90px;
     font-family:"Jomolhari";
     text-shadow: var(--text-shadow)
@@ -45,7 +45,7 @@ p {
         order: -1; 
     }
 
-    .texteParcour {
+    .texte-parcour {
         order: 1;
         width: 100%;
         text-align: center;

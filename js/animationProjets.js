@@ -17,17 +17,17 @@ function handleScreenChange(e) {
     if (e.matches) {
         TL1
         .from(accueil, 2, {y: -30, opacity: 0},)
-        .from(h2, 2, { x: -900, opacity: 0},'-=2')
-        .staggerFrom(cartes, 2, {x: 1000, opacity: 0}, 0.60, '-=2')
+        .from(h2, 2, { x: 500, opacity: 0},'-=2')
+        .staggerFrom(cartes, 2, {x: -500, opacity: 0}, 0.60, '-=2')
         TL1.play();
        
     } else {
         TL1
         .from(logo, 1.7, {y: -150, opacity: 0}, )
         .from(accueil, 1.7, { y: 150, opacity: 0},'-=1.7')
-        .from(h2, 3, {  opacity: 0},'-=1')
-        .staggerFrom(cartes, 2, {x: 1000, opacity: 0}, 0.20, '-=2.5')
-        .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20, '-=1.8')
+        .from(h2, 3, {y: -100,  opacity: 0},'-=1.3')
+        .staggerFrom(cartes, 2, {y: 200, opacity: 0}, 0.5, '-=3')
+        .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20, '-=1.7')
         TL1.play();
         
     }

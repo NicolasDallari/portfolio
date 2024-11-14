@@ -4,44 +4,46 @@
     max-width: 2300px; 
     height: 100vh;
 }
-.exempleProjets {
+.exemple-projets {
     width: 100%;
     display: flex;
     flex-direction: column; 
     max-width: calc(1300px);
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1em;
+    padding-left: 1em;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    
-    
+    justify-content: center; 
 }
  h2 {
     text-shadow:  2px 2px black;
-    color: rgb(193, 33, 33);
-    font-size: 40px;
-    padding-top: 70px;
-    opacity: 50%;
+    color: var(--text-chargement);
+    font-size: 2.5rem;
+    padding-top: 1.2em;
     text-align: center;
 }
-.containerProjet {
+.container-projets {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr; 
-    gap: 5rem;
-    margin-top: 100px;
-    justify-content: center;
-    
+    gap: 5em;
+    margin-top: 4em;
+    justify-content: center;  
 }
 .carte {
-    padding: 15px;
+    position: relative;
+    margin-bottom: 1em;
+    padding: 1em;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgb(255, 255, 255, 0.9); 
-    box-shadow: 1px 1px 10px #ffffff;
-   
+    background-color: rgb(255, 255, 255, 0.8); 
+    box-shadow: 1px 1px 10px #ffffff;  
+}
+.liens {
+    bottom: 0.5em; 
+    left: 1em; 
+    display: flex;
 }
 
 .image {
@@ -52,69 +54,66 @@
     width: 100%;
     height: auto;
     color: rgb(0, 0, 0);
-    font-size: 22px;
+    font-size: 1.2rem;
     border-radius: 5%;
- 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
-
-.lien {
-    width: 100%;
-    height: 10%;
-    margin-top: 10%;
-    text-align: center;
+.texte p {
+    margin: 0;
+    flex-grow: 1;
+    overflow: auto;
 }
-.imageSite{
+.image-site{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5%; 
-    box-shadow: 1px 1px 20px #000000;
-    
+    box-shadow: 1px 1px 20px #000000;  
 }
 h3 { 
     text-align: center;
-    font-size: 40px;
-    padding: 20px;
-    color: rgb(223, 150, 76);
-    
+    font-size: 2.5rem;
+    padding: 0.5em;
+    color: rgb(223, 150, 76);   
 }
 
 .imageLienGithub, .imageliensite {
     width: 30px;
     height: 30px;
     object-fit: cover;
-    border-radius: 30%; 
-    margin-top: 20px;
-    margin-right: 20px;
-    box-shadow: 1px 1px 10px #000000;
+    border-radius: 50%; 
+    margin-top: 1em;
+    margin-right: 1.5em;
+    box-shadow: 1px 1px 6px #000000;
 }
+
 @media screen and (max-width: 1422px ){ 
-    .containerProjet {
+    .container-projets {
         gap: 2rem;
     }
  }
  @media screen and (max-width: 1200px ){ 
-    .containerProjet {
+    .container-projets {
         gap: 2rem;
     }
  }
  @media screen and (max-width: 800px ){ 
-    .containerProjet {
+    .container-projets {
         gap: 2rem;
         grid-template-columns:  1fr 1fr;  
     }
-    h2 {
-        font-size: 30px;
-    }
  }
  @media screen and (max-width: 500px ){ 
-    .containerProjet {
+    .container-projets {
         grid-template-columns: 1fr ;
         padding-left: 10%;
         padding-right: 10%;
     }
     h2 {
-        font-size: 25px;
-
+        font-size: 2rem;
     }
  }
