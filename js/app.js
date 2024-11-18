@@ -30,5 +30,5 @@ window.addEventListener('load', () => {
 // Retarde l'affichage de la page principale jusqu'à 3 secondes après le chargement
 setTimeout(() => {
   chargement.style.display = 'none'; // Cache l'écran de chargement
-  document.querySelector('.container').style.display = 'block'; // Affiche le contenu principal de la page
+  document.querySelector('.container-index').style.display = 'block'; // Affiche le contenu principal de la page
 }, 0);
