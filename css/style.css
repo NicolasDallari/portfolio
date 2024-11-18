@@ -125,9 +125,11 @@ main {
 h1, .Hello, .Bienvenue, .NomPrénom, .Métier {
     font-family: "Jomolhari", serif;
     letter-spacing: 3px;
+    
 }
 
 h1 {
+    
     margin-top: 20vh;
     font-size: 5.5vw;
     writing-mode: vertical-rl;

@@ -54,7 +54,7 @@
     width: 100%;
     height: auto;
     color: rgb(0, 0, 0);
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5%;
     padding: 10px;
     display: flex;
@@ -63,6 +63,7 @@
     flex: 1;
 }
 .texte p {
+    font-family:"Kaisei Tokumin", serif;
     margin: 0;
     flex-grow: 1;
     overflow: auto;
@@ -75,6 +76,7 @@
     box-shadow: 1px 1px 20px #000000;  
 }
 h3 { 
+    text-shadow:  2px 2px black;
     text-align: center;
     font-size: 2.5rem;
     padding: 0.5em;
