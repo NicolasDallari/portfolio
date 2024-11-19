@@ -1,0 +1,50 @@
+.container-competence {
+    width: 100%;
+    max-width: 2300px; 
+    height: 100vh;
+}
+.competences {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titre {
+    height: 10%;
+    text-align: center;
+    
+}
+.listes {
+    height: 80%;
+    display: flex;
+    padding-top: 8em;
+    
+}
+.listes > div {
+    flex: 1; 
+    text-align: center; 
+}
+.cv {
+    height: 10%;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow:  3px 3px black;
+    padding-top: 3em;
+    
+}
+h3 {
+    font-size: 2.5rem;
+    color: var(--text-chargement);
+}
+li {
+    font-size: 2rem;
+    color: white;
+    padding-top: 1em;
+}
+.listes-front, .listes-back, .listes-outils {
+    display: flex;
+    flex-direction: column;
+    
+}
