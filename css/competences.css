@@ -17,7 +17,6 @@
     height: 80%;
     display: flex;
     padding-top: 8em;
-    
 }
 .listes > div {
     flex: 1; 
@@ -26,25 +25,200 @@
 .cv {
     height: 10%;
     text-align: center;
+    background-color: var(--text-chargement);
+    width: 12em;
+    height: 4em;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.6em;
+    box-shadow: 1px 5px 5px #000000; 
+   
+}
+a.visualiser-cv {
+    color: rgb(23, 22, 22);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family:"Kaisei Tokumin", serif;
 }
 h2 {
     font-size: 2rem;
     color: white;
     text-shadow:  3px 3px black;
     padding-top: 3em;
+    font-family:"Jomolhari";
     
 }
 h3 {
+    text-shadow:  2px 2px black;
     font-size: 2.5rem;
     color: var(--text-chargement);
+    font-family:"Jomolhari";
 }
-li {
+.listes-front li, .listes-back li, .listes-outils li {
     font-size: 2rem;
     color: white;
-    padding-top: 1em;
+    padding-top: 0.6em;
 }
 .listes-front, .listes-back, .listes-outils {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    margin-top: 1em; 
+    text-shadow:  2px 2px black;
+}
+
+img {
+    opacity: 0.1;
+    width: 6em;
+}
+/* POUR LA CLASSE FRONT */
+.css, .html, .github {
+    border-radius: 50%;
+}
+.front {
+    position: relative;
+}
+img.css, img.html, img.js {
+    position: absolute;
+}
+.css {
+    right: 20%;
+    top: 12%;
+}
+.html {
+    right: 40%;
+    top: 50%;
+}
+.js {
+    left: 15%;
+    top: 20%;
+}
+
+/* POUR LA CLASSE BACK */
+
+.back {
+    position: relative;
+}
+img.laravel, img.symfo, img.php, img.mysql, img.mariadb {
+    position: absolute;
+}
+.laravel {
+    left: 10%;
+    top: 15%
+}
+.symfo {
+    left: 10%;
+    top: 45%
+}
+.php {
+    left: 42%;
+    bottom: 20%
+}
+.mysql {
+    right: 15%;
+    top: 40%
+}
+.mariadb {
+    right: 15%;
+    top: 10%
+}
+/* POUR LA CLASSE OUTILS */
+
+.outils {
+    position: relative;
+}
+img.git, img.figma, img.agile, img.linux, img.github {
+    position: absolute;
+}
+.git {
+    left: 18%;
+    top: 15%
+}
+.figma {
+    left: 10%;
+    top: 45%
+}
+.agile {
+    left: 42%;
+    bottom: 15%
+}
+.linux {
+    right: 10%;
+    top: 40%
+}
+.github {
+    right: 15%;
+    top: 10%
+}
+@media screen and (max-width: 1024px) {
+    .listes {
+        flex-direction: column;
+        padding-top: 4em;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .listes-front li, .listes-back li, .listes-outils li {
+        font-size: 1.5rem;
+        color: white;
+        padding-top: 1em;
+    }
+    .listes-front, .listes-back, .listes-outils {
+        padding-bottom: 10em; 
+        
+    }
+    /* POUR LA CLASSE FRONT */
+    .container-front {
+        position: relative;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 1px 1px 10px #ffffff; 
+        border-radius: 15%;
+    }
+    img {
+        opacity: 0.2;
+        width: 3.5em;
+    }
+    .js{
+        border-radius: 50%;
+    }
+    .css {
+        left: 10%;
+        top: 35%;
+    }
+    .html {
+        left: 10%;
+        top: 15%
+    }
+    .js {
+        left: 10%;
+        top: 55%;
+    }
+   
+    /* POUR LA CLASSE BACK */
+
+    .laravel {
+        left: 10%;
+        top: 40%
+    }
+    .symfo {
+        left: 70%;
+        top: 25%
+    }
+    .php {
+        left: 10%;
+        top: 15%
+    }
+    .mysql {
+        left: 10%;
+        top: 50%
+    }
+    .mariadb {
+        left: 10%;
+        top: 60%
+    }
 }
