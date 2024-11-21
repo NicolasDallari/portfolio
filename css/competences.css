@@ -32,6 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 0.6em;
+    margin-bottom: 5em;
     box-shadow: 1px 5px 5px #000000; 
    
 }
@@ -87,7 +88,7 @@ img.css, img.html, img.js {
 }
 .html {
     right: 40%;
-    top: 50%;
+    top: 60%;
 }
 .js {
     left: 15%;
@@ -112,7 +113,7 @@ img.laravel, img.symfo, img.php, img.mysql, img.mariadb {
 }
 .php {
     left: 42%;
-    bottom: 20%
+    bottom: 12%
 }
 .mysql {
     right: 15%;
@@ -140,7 +141,7 @@ img.git, img.figma, img.agile, img.linux, img.github {
 }
 .agile {
     left: 42%;
-    bottom: 15%
+    bottom: 10%
 }
 .linux {
     right: 10%;
@@ -166,59 +167,87 @@ img.git, img.figma, img.agile, img.linux, img.github {
         color: white;
         padding-top: 1em;
     }
-    .listes-front, .listes-back, .listes-outils {
-        padding-bottom: 10em; 
-        
-    }
-    /* POUR LA CLASSE FRONT */
-    .container-front {
-        position: relative;
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        box-shadow: 1px 1px 10px #ffffff; 
-        border-radius: 15%;
+    .back, .outils {
+        margin-top: 7em;
     }
     img {
-        opacity: 0.2;
-        width: 3.5em;
+        opacity: 0.1;
+        width: 5.5em;
     }
+    /* POUR LA CLASSE FRONT */
+   
+    /* .container-front {
+        max-width: 600px;
+    } */
     .js{
         border-radius: 50%;
     }
     .css {
-        left: 10%;
-        top: 35%;
+        left: 40%;
+        top: 100%;
     }
     .html {
         left: 10%;
-        top: 15%
+        top: 40%
     }
     .js {
-        left: 10%;
-        top: 55%;
+        left: 70%;
+        top: 50%;
     }
    
     /* POUR LA CLASSE BACK */
 
     .laravel {
-        left: 10%;
-        top: 40%
+        left: 45%;
+        top: 100%
     }
     .symfo {
-        left: 70%;
-        top: 25%
+        left: 10%;
+        top: 20%
     }
     .php {
         left: 10%;
-        top: 15%
+        top: 65%
     }
     .mysql {
-        left: 10%;
-        top: 50%
+        left: 70%;
+        top: 25%
     }
     .mariadb {
-        left: 10%;
-        top: 60%
+        left: 75%;
+        top: 70%
     }
+        /* POUR LA CLASSE OUTILS */
+
+        .git {
+            left: 10%;
+            top: 60%
+        }
+        .figma {
+            left: 60%;
+            top: 10%
+        }
+        .agile {
+            left: 75%;
+            top: 80%
+        }
+        .linux {
+            left: 65%;
+            top: 35%
+        }
+        .github {
+            left: 10%;
+            top: 20%
+        }
+        .cv {
+            width: 8em;
+            height: 2.9em;
+            padding-top: 0.6em;
+            margin-top: 4em;
+            margin-bottom: 1em;
+        }
+        a.visualiser-cv {
+            font-size: 1rem;
+            
+        }
 }
