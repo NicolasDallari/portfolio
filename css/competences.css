@@ -76,7 +76,7 @@ img {
 .css, .html, .github {
     border-radius: 50%;
 }
-.front {
+.container-front {
     position: relative;
 }
 img.css, img.html, img.js {
@@ -97,7 +97,7 @@ img.css, img.html, img.js {
 
 /* POUR LA CLASSE BACK */
 
-.back {
+.container-back{
     position: relative;
 }
 img.laravel, img.symfo, img.php, img.mysql, img.mariadb {
@@ -125,7 +125,7 @@ img.laravel, img.symfo, img.php, img.mysql, img.mariadb {
 }
 /* POUR LA CLASSE OUTILS */
 
-.outils {
+.container-outils {
     position: relative;
 }
 img.git, img.figma, img.agile, img.linux, img.github {
@@ -158,6 +158,8 @@ img.git, img.figma, img.agile, img.linux, img.github {
     }
     h2 {
         font-size: 1.3rem;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
     h3 {
         font-size: 2rem;
@@ -176,9 +178,11 @@ img.git, img.figma, img.agile, img.linux, img.github {
     }
     /* POUR LA CLASSE FRONT */
    
-    /* .container-front {
+    .container-front {
+        min-width: 600px;
         max-width: 600px;
-    } */
+        margin:  auto;
+    }
     .js{
         border-radius: 50%;
     }
@@ -196,7 +200,11 @@ img.git, img.figma, img.agile, img.linux, img.github {
     }
    
     /* POUR LA CLASSE BACK */
-
+    .container-back {
+        min-width: 600px;
+        max-width: 600px;
+        margin:  auto;
+    }
     .laravel {
         left: 45%;
         top: 100%
@@ -217,37 +225,52 @@ img.git, img.figma, img.agile, img.linux, img.github {
         left: 75%;
         top: 70%
     }
-        /* POUR LA CLASSE OUTILS */
-
-        .git {
-            left: 10%;
-            top: 60%
-        }
-        .figma {
-            left: 60%;
-            top: 10%
-        }
-        .agile {
-            left: 75%;
-            top: 80%
-        }
-        .linux {
-            left: 65%;
-            top: 35%
-        }
-        .github {
-            left: 10%;
-            top: 20%
-        }
-        .cv {
-            width: 8em;
-            height: 2.9em;
-            padding-top: 0.6em;
-            margin-top: 4em;
-            margin-bottom: 1em;
-        }
-        a.visualiser-cv {
-            font-size: 1rem;
-            
-        }
+    /* POUR LA CLASSE OUTILS */
+    .container-outils {
+        min-width: 600px;
+        max-width: 600px;
+        margin:  auto;
+    }
+    .git {
+        left: 10%;
+        top: 60%
+    }
+    .figma {
+        left: 60%;
+        top: 10%
+    }
+    .agile {
+        left: 75%;
+        top: 80%
+    }
+    .linux {
+        left: 65%;
+        top: 35%
+    }
+    .github {
+        left: 10%;
+        top: 20%
+    }
+    .cv {
+        width: 8em;
+        height: 2.9em;
+        padding-top: 0.6em;
+        margin-top: 4em;
+        margin-bottom: 1em;
+    }
+    a.visualiser-cv {
+        font-size: 1rem;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-front {
+        min-width: 400px;
+    }
+    .container-back {
+        min-width: 400px;
+    }
+    .container-outils {
+        min-width: 400px;
+    }
 }

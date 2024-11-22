@@ -21,7 +21,10 @@ function handleScreenChange(e) {
         TL1
         .from(accueil, 3, {y: -30, opacity: 0},)
         .from(h2, 2, { y: 100, opacity: 0},'-=2.5')
-        .staggerFrom(cartes, 2, {y: 100, opacity: 0}, 0.60, '-=2')
+        .from(front, 2, {y: 100, opacity: 0},'-=1.7')
+        .from(back, 2, { y: 100, opacity: 0},'-=1.3')
+        .from(outils, 2, {y: 100, opacity: 0},'-=1.3')
+        .from(cv, 1, {y: 100, opacity: 0},'-=1.7')
         TL1.play();
        
     } else {
@@ -30,10 +33,10 @@ function handleScreenChange(e) {
         .from(accueil, 1.7, { y: 150, opacity: 0},'-=1.7')
         .from(h2, 2, {  opacity: 0},'-=1.2')
         .from(front, 2, { opacity: 0},'-=1.7')
-        .from(back, 2, { opacity: 0},'-=1.9')
-        .from(outils, 2, { opacity: 0},'-=1.9')
-        .from(cv, 1, { y: 100, opacity: 0},'-=1.5')
-        .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20, '-=1.5')
+        .from(back, 2, { opacity: 0},'-=1.3')
+        .from(outils, 2, { opacity: 0},'-=1.3')
+        .from(cv, 1, { y: 100, opacity: 0},'-=1.7')
+        .staggerFrom(allItems, 1, {y: -100, opacity: 0}, 0.20, '-=1.7')
         TL1.play();
         
     }
