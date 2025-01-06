@@ -1,0 +1,65 @@
+@import url("style.css");
+.container-competence {
+    width: 100%;
+    max-width: 2300px; 
+    height: 100vh;
+}
+.formulaire {
+    width: 60%;
+    padding-top: 60px;
+}
+.lien-contact {
+    width: 25%;
+}
+h2.contactez-moi {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 0rem;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+input {
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+#name {
+    margin-top: 40px;
+}
+textarea {
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 14px;
+    resize: vertical;
+}
+button {
+    margin-top: 80px;
+    background-color: rgb(223, 150, 76);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #383737;
+    color: rgb(223, 150, 76);
+}
+.github, .linkedin, .region, .numero{
+    font-size: 1.5rem;
+}
