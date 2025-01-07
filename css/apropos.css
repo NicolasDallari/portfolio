@@ -19,7 +19,8 @@ section.image-portrait { width: 30%; }
 .texte-parcour {
     padding-top: 90px;
     font-family:"Jomolhari";
-    text-shadow: var(--text-shadow)
+    text-shadow: var(--text-shadow);
+    font-weight: lighter;
 }
 h2 {
     color: rgb(223, 150, 76);
