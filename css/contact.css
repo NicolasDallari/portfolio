@@ -203,5 +203,6 @@ button:hover {
     }
     .image-de-lettre {
         width: 25vw;
+        opacity: 0.10;
     }
 }

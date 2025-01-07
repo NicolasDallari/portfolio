@@ -48,6 +48,7 @@ h2 {
     text-shadow:  3px 3px black;
     padding-top: 3em;
     font-family:"Jomolhari";
+    font-weight: lighter;
     
 }
 h3 {
@@ -69,7 +70,6 @@ h3 {
 }
 
 img {
-    opacity: 0.1;
     width: 6em;
 }
 /* POUR LA CLASSE FRONT */
@@ -173,7 +173,6 @@ img.git, img.figma, img.agile, img.linux, img.github {
         margin-top: 7em;
     }
     img {
-        opacity: 0.1;
         width: 5.5em;
     }
     /* POUR LA CLASSE FRONT */
