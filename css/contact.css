@@ -78,6 +78,7 @@ button:hover {
     right: 0px;           
     width: 17vw;          
     height: auto; 
+    opacity: 0.10;
 }
 .imggithub, .imglinkedin, .imgmaps, .imgtelephone {
     opacity: 1;
@@ -92,19 +93,33 @@ button:hover {
 .lien-contact {
     margin-top: 150px;
     display: flex;
-    flex-direction: column; /* Dispose chaque contact-item en colonne */
-    gap: 25px; /* Ajoute de l'espace entre les éléments */
+    flex-direction: column; 
+    gap: 25px; 
 }
 
 .contact-item {
     display: flex;
-    align-items: center; /* Aligne l'image et le texte sur la même ligne horizontalement */
-    gap: 10px; /* Ajoute de l'espace entre l'image et le texte */
+    align-items: center; 
+    gap: 10px; 
 }
 .contact-item h3 {
-    margin: 0; /* Supprime la marge par défaut des titres */
+    margin: 0; 
 }
+
 @media screen and (max-width:1024px) {
+    /* body {
+        margin-top: 80px; 
+    }
+    nav {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        backdrop-filter: blur(10px); 
+        box-shadow: 0px 0.5px rgb(223, 150, 76);
+
+    } */
     .formulaire {
         width: 100%;
         padding-top: 30px;
@@ -152,39 +167,20 @@ button:hover {
     }
     .image-de-lettre {
         width: 25vw;
+        
     }
 }
 @media screen and (max-width:500px) {
-    .formulaire {
-        width: 100%;
-        padding-top: 30px;
-    }
+
     h2.contactez-moi {
         font-size: 1rem;
     }
-    #name {
-        margin-top: 15px;
-    }
-    input {
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-    }
     textarea {
-        border-radius: 20px;
         font-size: 14px;
         height: 150px;
     }
     button {
-        margin-top: 30px;
         font-size: 10px;
-        padding: 6px 13px;
-    }
-    .lien-contact {
-        width: 100%;
-        margin-top: 10px;
-        gap: 20px;
-
     }
     .contact-item {
         margin-left: 15%;
@@ -198,11 +194,5 @@ button:hover {
     .github, .linkedin, .region, .numero, .agithub, .alinkedin {
         font-size: 1rem;
     }
-    .imgtelephone, h3.numero {
-        margin-bottom: 20px;
-    }
-    .image-de-lettre {
-        width: 25vw;
-        opacity: 0.10;
-    }
+    
 }

@@ -19,6 +19,10 @@ croixFermeture.addEventListener("click", () => {
   navLinks.classList.remove("open"); // Supprime 'open' pour arrêter les animations
 });
 
+
+
+
+
 // Sélection de l'élément de chargement
 const chargement = document.querySelector('.chargement');
 
