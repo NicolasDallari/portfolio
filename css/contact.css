@@ -1,0 +1,198 @@
+@import url("style.css");
+.container-competence {
+    width: 100%;
+    max-width: 2300px; 
+    height: 100vh;
+}
+.formulaire {
+    width: 60%;
+    padding-top: 60px;
+}
+.lien-contact {
+    width: 25%;
+}
+h2.contactez-moi {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 0rem;
+    color: rgb(204, 194, 184);
+    font-family: none;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+input {
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+#name {
+    margin-top: 40px;
+}
+textarea {
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    resize: vertical;
+}
+button {
+    margin-top: 80px;
+    background-color: rgb(223, 150, 76);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #383737;
+    color: rgb(223, 150, 76);
+}
+.github, .linkedin, .region, .numero, .agithub, .alinkedin {
+    font-size: 1.2rem;
+    color: rgb(204, 194, 184);
+    font-weight: lighter;
+    font-family: none;
+}
+.lien-contact a:hover {
+    color: rgb(223, 150, 76);
+    
+}
+.image-de-lettre {
+    object-fit: contain;
+    position: fixed;     
+    bottom: 0px;          
+    right: 0px;           
+    width: 17vw;          
+    height: auto; 
+    opacity: 0.10;
+}
+.imggithub, .imglinkedin, .imgmaps, .imgtelephone {
+    opacity: 1;
+}
+.imglinkedin, .imgmaps, .imgtelephone {
+    width: 4rem;
+}
+.imggithub {
+    width: 4rem;
+}
+
+.lien-contact {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+.contact-item h3 {
+    margin: 0; 
+}
+
+@media screen and (max-width:1024px) {
+    /* body {
+        margin-top: 80px; 
+    }
+    nav {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        backdrop-filter: blur(10px); 
+        box-shadow: 0px 0.5px rgb(223, 150, 76);
+
+    } */
+    .formulaire {
+        width: 100%;
+        padding-top: 30px;
+    }
+    h2.contactez-moi {
+        font-size: 1.5rem;
+    }
+    #name {
+        margin-top: 15px;
+    }
+    input {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    textarea {
+        border-radius: 20px;
+        font-size: 8px;
+    }
+    button {
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 6px 13px;
+    }
+    .lien-contact {
+        width: 100%;
+        margin-top: 10px;
+        gap: 20px;
+
+    }
+    .contact-item {
+        margin-left: 20%;
+    }
+    .imggithub {
+        width: 3rem;
+    }
+    .imglinkedin, .imgmaps, .imgtelephone {
+        width: 3rem;
+    }
+    .github, .linkedin, .region, .numero, .agithub, .alinkedin {
+        font-size: 1.5rem;
+    }
+    .imgtelephone, h3.numero {
+        margin-bottom: 20px;
+    }
+    .image-de-lettre {
+        width: 25vw;
+        
+    }
+}
+@media screen and (max-width:500px) {
+
+    h2.contactez-moi {
+        font-size: 1rem;
+    }
+    textarea {
+        font-size: 14px;
+        height: 150px;
+    }
+    button {
+        font-size: 10px;
+    }
+    .contact-item {
+        margin-left: 15%;
+    }
+    .imggithub {
+        width: 2rem;
+    }
+    .imglinkedin, .imgmaps, .imgtelephone {
+        width: 2rem;
+    }
+    .github, .linkedin, .region, .numero, .agithub, .alinkedin {
+        font-size: 1rem;
+    }
+    
+}
